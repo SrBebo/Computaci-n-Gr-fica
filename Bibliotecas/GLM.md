@@ -10,15 +10,16 @@ pero descargamos este apartado
 ###
 ![image](https://user-images.githubusercontent.com/70413460/173428981-31bb2bbf-0a93-4ae1-859f-559390bf7810.png)
 ###
-
+- A continuación abrimos visual studio y creamos un proyecto vacio de c++ y nos dirigimos a propiedades del proyecto, haciendo clic derecho sobre el nombre del proyecto en las opciones de la parte central de la derecha.
 
 ![image](https://user-images.githubusercontent.com/70413460/173429340-44aa4da6-74cb-49e8-bf0e-56b6c17bcbef.png)
 ![image](https://user-images.githubusercontent.com/70413460/173429360-45c4167c-60d0-47ab-b2cc-d41605a61a7b.png)
-
+###
+- Se abre la ventana de opciones y vamos a Directorios de VC++
 
 ![image](https://user-images.githubusercontent.com/70413460/173429414-c45ade81-fde2-480c-894a-626ad7677b35.png)
-
-
+###
+- En la parte de general, la opción de Directorios de archivos de inclusión, editamos los paths
 
 ![image](https://user-images.githubusercontent.com/70413460/173429503-cd78be6a-9e95-4727-8180-a7a9e8ebde9e.png)
 
