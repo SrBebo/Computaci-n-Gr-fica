@@ -27,32 +27,26 @@ pero descargamos este apartado
 ![image](https://user-images.githubusercontent.com/70413460/173429635-56e80dd8-ec15-4954-9b3e-5019a92909d3.png)
 
 
-
 ![image](https://user-images.githubusercontent.com/70413460/173429697-eec52ccf-1bc2-4287-98cc-a14f753be6fc.png)
-
+###
+- Después vamos a la opcion de Directorios de archivos de bilbiotecas y editamos los paths
 
 
 ![image](https://user-images.githubusercontent.com/70413460/173429737-ca61b72d-34e9-41a8-9bc2-b9203292073d.png)
 
 
-
-
-
-
-
 ![image](https://user-images.githubusercontent.com/70413460/173429812-e4763b55-07c6-4686-8f79-dd364dc9c46d.png)
-
-
-
-
+###
+- Una vez editados, le damos en aplicar y aceptar
 
 ![image](https://user-images.githubusercontent.com/70413460/173429873-5af8e69e-d54e-4507-8f96-fe6c9430d520.png)
-
-
+###
+- Ahora ya podemos crear codigo con importacion de la biblioteca GLM, nos dirigimos al apartado de archivos de recursos del proyecto en la parte central derecha, agregar y nuevo elemento
 
 
 ![image](https://user-images.githubusercontent.com/70413460/173430000-3f4d17a5-2b89-48af-94bb-0c2225683579.png)
-
+###
+- Escogemos archivo c++ y comenzamos a codificar
 
 
 ![image](https://user-images.githubusercontent.com/70413460/173430040-dd23e744-e653-4d32-969f-d2983d94e2a5.png)
