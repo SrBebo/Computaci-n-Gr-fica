@@ -46,7 +46,7 @@ void display() {
 
 void movIzq() {
 	if (isKey) {
-		posx -= 0.5;
+		posx -= 0.0005;
 
 	}
 	if (ismouse) {
@@ -61,8 +61,15 @@ void movIzq() {
 
 void movDer() {
 	if (isKey) {
-		posx += 0.5;
+		posx += 0.0005;
 
+	}
+	if (ismouse) {
+		spin += 0.05;
+		if (spin < -360) {
+			spin += 360;
+
+		}
 	}
 	glutPostRedisplay();
 }
