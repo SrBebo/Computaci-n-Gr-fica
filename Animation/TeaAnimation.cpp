@@ -28,7 +28,7 @@ void reshape(GLsizei w, GLsizei h) {
 void display() {
 	glClear(GL_COLOR_BUFFER_BIT);
 	//glLoadIdentity();
-	glutWireTeacup(1);
+	glutWireTeacup(5);
 	glutSwapBuffers();
 
 }
