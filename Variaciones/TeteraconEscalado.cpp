@@ -17,11 +17,11 @@ void display() {
 	glMatrixMode(GL_MODELVIEW);
 
 	glLoadIdentity();
-
-	/*glutSolidTeapot(1);*/
-	glutWireTeapot(0.5);
+	gluLookAt(5, 0, 10, 0, 0, 0, 0, 1, 0);
+	glRotatef(0.0,2.0,1.0,0.0);
+	glRotatef(0.0,1.0,0.0,0.0);
+	glutWireTeapot(1);
 	glFlush();
-}
 
 int main(int arge, char* argv[]) {
 
