@@ -29,44 +29,99 @@ void init() {
 }
 
 void display() {
-    GLfloat notmat[]={0,0,0,1};
-    GLfloat mat_ambiente_color[] = {1, 0.3, 0.3, 1.0};
-    GLfloat mat_ambiente[] = {0.33, 0.22, 0.03, 1.0};
-    GLfloat mat_difusa[] = {0.8, 0.6, 0.11, 1.0};
-    GLfloat mat_specular[] = {1, 0.9, 0.8, 1.0};
-    GLfloat no_brillo[] = {0};
-    GLfloat bajo_brillo[] = {5};
-    GLfloat alto_brillo[] = { 100 };
+    GLfloat notmat[] = { 0,0,0,1 };
+    GLfloat mat_ambiente_color[] = { 0.5,0.3,1,1.0 };
+    GLfloat mat_ambiente[] = { 0.33,0.22,0.03,1.0 };
+    GLfloat mat_difusa[] = { 0.8,0.6,0.11,1.0 };
+    GLfloat mat_specular[] = { 1.0,0.9,0.2,1.0 };
+    GLfloat no_brillo[] = { 0.0 };
+    GLfloat bajo_brillo[] = { 5.0 };
+    GLfloat alto_brillo[] = { 100.0 };
 
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
     glPushMatrix();
-    glTranslatef(-3.75, 0.0, 0);
+    glTranslatef(-3.75, 3.0, 0.0);
     glMaterialfv(GL_FRONT, GL_AMBIENT, notmat);
     glMaterialfv(GL_FRONT, GL_DIFFUSE, mat_difusa);
     glMaterialfv(GL_FRONT, GL_SPECULAR, notmat);
     glMaterialfv(GL_FRONT, GL_SHININESS, no_brillo);
-    glutSolidSphere(1,16,16);
+    glutSolidSphere(1.0, 16, 16);
     glPopMatrix();
 
     glPushMatrix();
-    glTranslatef(-0.75, 0.0, 0);
+    glTranslatef(-1.25, 3.0, 0.0);
     glMaterialfv(GL_FRONT, GL_AMBIENT, notmat);
     glMaterialfv(GL_FRONT, GL_DIFFUSE, mat_difusa);
     glMaterialfv(GL_FRONT, GL_SPECULAR, mat_specular);
     glMaterialfv(GL_FRONT, GL_SHININESS, bajo_brillo);
-    glutSolidSphere(1, 16, 16);
+    glutSolidSphere(1.0, 16, 16);
     glPopMatrix();
 
     glPushMatrix();
-    glTranslatef(2.25, 0.0, 0);
+    glTranslatef(1.25, 3.0, 0.0);
     glMaterialfv(GL_FRONT, GL_AMBIENT, notmat);
     glMaterialfv(GL_FRONT, GL_DIFFUSE, mat_difusa);
     glMaterialfv(GL_FRONT, GL_SPECULAR, mat_specular);
     glMaterialfv(GL_FRONT, GL_SHININESS, alto_brillo);
-    glutSolidSphere(1, 16, 16);
+    glutSolidSphere(1.0, 16, 16);
     glPopMatrix();
 
+
+    glPushMatrix();
+    glTranslatef(-3.75, 0.0, 0.0);
+    glMaterialfv(GL_FRONT, GL_AMBIENT, mat_ambiente);
+    glMaterialfv(GL_FRONT, GL_DIFFUSE, mat_difusa);
+    glMaterialfv(GL_FRONT, GL_SPECULAR, notmat);
+    glMaterialfv(GL_FRONT, GL_SHININESS, no_brillo);
+    glutSolidSphere(1.0, 16, 16);
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(-1.25, 0.0, 0.0);
+    glMaterialfv(GL_FRONT, GL_AMBIENT, mat_ambiente);
+    glMaterialfv(GL_FRONT, GL_DIFFUSE, mat_difusa);
+    glMaterialfv(GL_FRONT, GL_SPECULAR, mat_specular);
+    glMaterialfv(GL_FRONT, GL_SHININESS, bajo_brillo);
+    glutSolidSphere(1.0, 16, 16);
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(1.25, 0.0, 0.0);
+    glMaterialfv(GL_FRONT, GL_AMBIENT, mat_ambiente);
+    glMaterialfv(GL_FRONT, GL_DIFFUSE, mat_difusa);
+    glMaterialfv(GL_FRONT, GL_SPECULAR, mat_specular);
+    glMaterialfv(GL_FRONT, GL_SHININESS, alto_brillo);
+    glutSolidSphere(1.0, 16, 16);
+    glPopMatrix();
+
+
+    glPushMatrix();
+    glTranslatef(-3.75, -3.0, 0.0);
+    glMaterialfv(GL_FRONT, GL_AMBIENT, mat_ambiente_color);
+    glMaterialfv(GL_FRONT, GL_DIFFUSE, mat_difusa);
+    glMaterialfv(GL_FRONT, GL_SPECULAR, notmat);
+    glMaterialfv(GL_FRONT, GL_SHININESS, no_brillo);
+    glutSolidSphere(1.0, 16, 16);
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(-1.25, -3.0, 0.0);
+    glMaterialfv(GL_FRONT, GL_AMBIENT, mat_ambiente_color);
+    glMaterialfv(GL_FRONT, GL_DIFFUSE, mat_difusa);
+    glMaterialfv(GL_FRONT, GL_SPECULAR, mat_specular);
+    glMaterialfv(GL_FRONT, GL_SHININESS, bajo_brillo);
+    glutSolidSphere(1.0, 16, 16);
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(1.25, -3.0, 0.0);
+    glMaterialfv(GL_FRONT, GL_AMBIENT, mat_ambiente_color);
+    glMaterialfv(GL_FRONT, GL_DIFFUSE, mat_difusa);
+    glMaterialfv(GL_FRONT, GL_SPECULAR, mat_specular);
+    glMaterialfv(GL_FRONT, GL_SHININESS, alto_brillo);
+    glutSolidSphere(1.0, 16, 16);
+    glPopMatrix();
     glutSwapBuffers();
 }
 
