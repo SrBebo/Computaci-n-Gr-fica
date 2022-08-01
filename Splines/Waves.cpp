@@ -60,7 +60,8 @@ void spline() {
 	glRotatef(45, 1, 0, 0);
 
 	//glBegin(GL_LINE_STRIP);
-	glBegin(GL_QUADS);
+	//glBegin(GL_QUADS);
+	glBegin(GL_LINE_STRIP);
 
 	for (Xpos = 0; Xpos < 44; Xpos++) {
 		for (Ypos = 0; Ypos < 44; Ypos++) {
